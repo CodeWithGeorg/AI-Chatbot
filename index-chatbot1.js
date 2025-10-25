@@ -19,8 +19,12 @@ function displayChats() {
       botReply = "Hi there! ";
     } else if (inputValue.toLowerCase() === "how are you") {
       botReply = "I'm doing great, thanks for asking!";
-    } else {
-      botReply = "I'm still learning to chat like a real AI ";
+    } else if (inputValue.toLowerCase() === "hi") {
+      botReply = "I'm doing great, thanks for asking!";
+    } else if(inputValue.toLowerCase() === "Am also fine") {
+      botReply = "That's really nice to hear how can i be of your assistant";
+    } else{
+      botReply = "A'm still learning how to use Ai just bear with me for some time"
     }
 
     setTimeout(() => {
