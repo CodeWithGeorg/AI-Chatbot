@@ -23,6 +23,8 @@ function displayChats() {
       botReply = "I'm doing great, thanks for asking!";
     } else if(inputValue.toLowerCase() === "Am also fine") {
       botReply = "That's really nice to hear how can i be of your assistant";
+    } else if(inputValue.toLowerCase() === "what is new today") {
+      botReply = " What news would like to here today";
     } else{
       botReply = "A'm still learning how to use Ai just bear with me for some time"
     }
