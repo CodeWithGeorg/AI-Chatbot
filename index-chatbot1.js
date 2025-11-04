@@ -44,3 +44,14 @@ sendBtn.addEventListener("click", displayChats);
 inputBox.addEventListener("keypress", (e) => {
   if (e.key === "Enter") displayChats();
 });
+
+
+function toggleTheme(){
+  const btnToggle = document.querySelector(".btn");
+
+  btnToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  })
+
+}
+toggleTheme();

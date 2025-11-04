@@ -2,15 +2,37 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --bg-color: radial-gradient(1000px 900px at 70% 80%, rgb(0, 255, 132), rgba(242, 10, 211, 0.925));
+  --color: aqua;
+  --bg-container: rgba(0, 255, 255, 0.671);
+  --user-color:#0078ff; 
+}
 body{
-  background: radial-gradient(1000px 900px at 70% 80%, rgb(0, 255, 132), rgba(242, 10, 211, 0.925));
+  background: var(--bg-color);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+body.dark{
+   --bg-color: linear-gradient(90deg, rgba(131, 58, 180, 1) 20%, rgba(253, 29, 29, 1) 62%, rgba(252, 176, 69, 1) 88%);;
+  --color: rgb(72, 3, 161);
+  --bg-container: rgba(149, 2, 168, 0.897);
+  --user-color:#d602cc; 
+}
+.theme{
+  position: fixed;
+  padding: 10px;
+  border-radius: 50%;
+  border:1px solid #d602cc ;
+  top: 20%;
+  left: 2%;
+  background: transparent;
+}
 .container{
-  background: rgba(0, 255, 255, 0.671);
+  background:var(--bg-container);
   width: 300px;
   height: 400px;
   border: none;
@@ -47,14 +69,14 @@ body{
 
 }
 .sentButton{
-  background: aqua;
+  background: var(--color);
   font-weight: 500;
   cursor: pointer;
   transition: color 0.5s ease;
 }
 .sentButton:hover,
 .input-button:hover{
-  color: aqua;
+  color: var(--color);
   background: black;
 }
 .sentButton:active{
@@ -101,7 +123,7 @@ body{
 }
 
 .user {
-  background: #0078ff;
+  background: var(--user-color);
   color: white;
   align-self: flex-end;
   border-bottom-right-radius: 2px;
