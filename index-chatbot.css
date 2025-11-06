@@ -26,8 +26,8 @@ body.dark{
   position: fixed;
   padding: 10px;
   border-radius: 50%;
-  border:1px solid #d602cc ;
-  top: 20%;
+  border:1px solid #0222d6 ;
+  top: 10%;
   left: 2%;
   background: transparent;
 }
