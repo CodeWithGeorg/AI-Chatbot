@@ -7,6 +7,7 @@
   --color: aqua;
   --bg-container: rgba(0, 255, 255, 0.671);
   --user-color:#0078ff; 
+  
 }
 body{
   background: var(--bg-color);
@@ -14,6 +15,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  --bg-hover: rgb(87, 3, 90);
 }
 
 body.dark{
@@ -21,12 +23,13 @@ body.dark{
   --color: rgb(72, 3, 161);
   --bg-container: rgba(149, 2, 168, 0.897);
   --user-color:#d602cc; 
+  --bg-hover: rgb(2, 143, 136);
 }
 .theme{
   position: fixed;
   padding: 10px;
   border-radius: 50%;
-  border:1px solid #0222d6 ;
+  border:1px solid #071b91 ;
   top: 10%;
   left: 2%;
   background: transparent;
@@ -77,7 +80,7 @@ body.dark{
 .sentButton:hover,
 .input-button:hover{
   color: var(--color);
-  background: black;
+  background: var(--bg-hover);
 }
 .sentButton:active{
   color: blueviolet;
