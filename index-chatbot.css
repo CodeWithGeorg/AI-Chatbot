@@ -36,8 +36,8 @@ body.dark{
 }
 .container{
   background:var(--bg-container);
-  width: 300px;
-  height: 400px;
+  width: 500px;
+  height: 600px;
   border: none;
   border-radius: 10%;
   display: flex;
@@ -60,12 +60,21 @@ body.dark{
   position: sticky;
   bottom: 0;
   margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 50px;
+
+}
+.input-button{
+
+  flex: 1fr 2fr;
 
 }
 
 .input-button,
 .sentButton{
-  padding: 10px;
+  padding: 15px;
   border: 1px solid aqua;
   border-radius: 10px;
   
@@ -76,6 +85,7 @@ body.dark{
   font-weight: 500;
   cursor: pointer;
   transition: color 0.5s ease;
+  flex: 3fr;
 }
 .sentButton:hover,
 .input-button:hover{
@@ -106,11 +116,10 @@ body.dark{
 }
 
 .main {
-  background: transparent;
   border-radius: 20px;
   padding: 20px;
-  width: 300px;
-  height: 500px;
+  width: 400px;
+  height: 600px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
